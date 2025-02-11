@@ -1,0 +1,24 @@
+
+
+services:
+  postgres:
+    container_name: us_demographics_2023
+    image: postgres:17.2
+    volumes:
+      - ../psql_db_data:/var/lib/postgresql/data
+      - ../psql_init/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      POSTGRES_DB: us_demographics_2023
+      POSTGRES_USER: psql_user
+      POSTGRES_PASSWORD_FILE: /run/secrets/psql_password
+      PGDATA: psql_db_data
+    secrets:
+      - psql_user
+      - psql_password
+
+secrets:
+  psql_user:
+    file: psql_user.txt
+  psql_password:
+    file: psql_password.txt
+  
