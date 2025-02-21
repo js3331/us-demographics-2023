@@ -1,4 +1,2 @@
-data/*.zip
-data/*.csv
-docker/psql_password.txt
-docker/psql_user.txt
+*.zip
+*.csv
