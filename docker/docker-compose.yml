@@ -8,3 +8,5 @@ services:
       - ../psql_init/:/docker-entrypoint-initdb.d/
     environment:
       POSTGRES_PASSWORD: usdemographics 
+    ports:
+      - 5432:5432

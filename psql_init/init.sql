@@ -1,4 +1,4 @@
-CREATE TABLE us_demographic_data_2023 (
+CREATE TABLE us_demographics_data_2023 (
     county TEXT,
     state TEXT,
     state_fips_code SMALLINT,
@@ -13,8 +13,8 @@ CREATE TABLE us_demographic_data_2023 (
     hispanic_or_latino INTEGER
 );
 
-COPY us_demographic_data_2023 FROM '/docker-entrypoint-initdb.d/data/us_demographics_2023.csv' DELIMITER ',' CSV HEADER;
-SELECT * FROM us_demographic_data_2023
+COPY us_demographics_data_2023 FROM '/docker-entrypoint-initdb.d/data/us_demographics_2023.csv' DELIMITER ',' CSV HEADER;
+SELECT * FROM us_demographics_data_2023
 LIMIT 5;
 
 SELECT current_user;
