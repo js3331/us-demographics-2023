@@ -1,17 +1,20 @@
-CREATE TABLE Beatles (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    height DECIMAL,
-    weight DECIMAL,
-    instrument VARCHAR(100),
-    birth_place VARCHAR(100),
-    active_years VARCHAR(100)
+CREATE TABLE us_demographic_data_2023 (
+    county TEXT,
+    state TEXT,
+    state_fips_code SMALLINT,
+    county_fips_code SMALLINT,
+    fips INTEGER,
+    total_population INTEGER,
+    male_population INTEGER,
+    female_population INTEGER,
+    total_race_reponses INTEGER,
+    white_alone INTEGER,
+    black_or_african_american_alone INTEGER,
+    hispanic_or_latino INTEGER
 );
 
-INSERT INTO Beatles (name, height, weight, instrument, birth_place, active_years)
-VALUES ('John Lennon', 179, 70, 'Vocals, Guitar', 'Liverpool, England', '1960-1970'),
-       ('Paul McCartney', 180, 68, 'Vocals, Bass', 'Liverpool, England', '1960-1970'),
-       ('George Harrison', 178, 68, 'Vocals, Guitar', 'Liverpool, England', '1960-1970'),
-       ('Ringo Starr', 173, 65, 'Vocals, Drums', 'Liverpool, England', '1962-1970');
+COPY us_demographic_data_2023 FROM '/docker-entrypoint-initdb.d/data/us_demographics_2023.csv' DELIMITER ',' CSV HEADER;
+SELECT * FROM us_demographic_data_2023
+LIMIT 5;
 
-SELECT * FROM Beatles;
+SELECT current_user;
