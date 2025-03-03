@@ -1,0 +1,23 @@
+table 'Measure Table'
+	lineageTag: 96f3eace-a1a2-4767-9a7f-f85a5afbb542
+
+	measure 'Total Population' = SUM('public us_demographics_data_2023'[total_population])
+		formatString: 0
+		lineageTag: 1fa9d484-1683-408a-aaab-a1c7f80a98d5
+
+	measure 'All US Population' = CALCULATE([Total Population], ALL('public us_demographics_data_2023'))
+		formatString: 0
+		lineageTag: 0f9e2be9-fdee-429b-8c8a-f9e7e9c49c09
+
+	partition 'Measure Table' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

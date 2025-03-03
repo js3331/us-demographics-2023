@@ -1,0 +1,165 @@
+table 'public us_demographics_data_2023'
+	lineageTag: 4b080615-d5b6-41d9-83f8-5f177dccf73d
+
+	column county
+		dataType: string
+		lineageTag: 86a6ff78-6049-46a5-8441-e15dbdcf40c3
+		summarizeBy: none
+		sourceColumn: county
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: 51e12ea3-4dbf-4049-9219-d09e0cfa9b25
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_fips_code
+		dataType: int64
+		formatString: 0
+		lineageTag: ffbc6716-8b48-41b1-b112-32b55a6b1309
+		summarizeBy: sum
+		sourceColumn: state_fips_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column county_fips_code
+		dataType: int64
+		formatString: 0
+		lineageTag: c593663d-205b-4dac-8183-f5252c34f15d
+		summarizeBy: sum
+		sourceColumn: county_fips_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column fips
+		dataType: int64
+		formatString: 0
+		lineageTag: 269f602c-6333-4bc0-ba2a-d941d7f273d2
+		summarizeBy: sum
+		sourceColumn: fips
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_population
+		dataType: int64
+		formatString: #,0
+		lineageTag: 089d941d-d8cf-4654-b383-2b9949812692
+		summarizeBy: sum
+		sourceColumn: total_population
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"public us_demographics_data_2023","TableItemName":"total_population (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column male_population
+		dataType: int64
+		formatString: #,0
+		lineageTag: 126a0de4-fe1f-41a2-8e8e-887c3ca0ca02
+		summarizeBy: sum
+		sourceColumn: male_population
+
+		annotation SummarizationSetBy = Automatic
+
+	column female_population
+		dataType: int64
+		formatString: #,0
+		lineageTag: 92df901f-e374-4c6c-bcef-ceaf1aaee9dc
+		summarizeBy: sum
+		sourceColumn: female_population
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_race_reponses
+		dataType: int64
+		formatString: #,0
+		lineageTag: a2e4da20-733e-40a2-8681-234554ff6780
+		summarizeBy: sum
+		sourceColumn: total_race_reponses
+
+		annotation SummarizationSetBy = Automatic
+
+	column white_alone
+		dataType: int64
+		formatString: #,0
+		lineageTag: f66bb8b3-9921-49b6-82fc-a3c0ae94e83e
+		summarizeBy: sum
+		sourceColumn: white_alone
+
+		annotation SummarizationSetBy = Automatic
+
+	column black_or_african_american_alone
+		dataType: int64
+		formatString: #,0
+		lineageTag: d7fff87f-3b6b-4590-a2ac-0bab0a8923f5
+		summarizeBy: sum
+		sourceColumn: black_or_african_american_alone
+
+		annotation SummarizationSetBy = Automatic
+
+	column hispanic_or_latino
+		dataType: int64
+		formatString: #,0
+		lineageTag: f276fc65-2ebf-4e19-a18f-e4585c1d9414
+		summarizeBy: sum
+		sourceColumn: hispanic_or_latino
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'total_population (bins)' =
+			IF(
+				ISBLANK('public us_demographics_data_2023'[total_population]),
+				BLANK(),
+				INT('public us_demographics_data_2023'[total_population] / 328278.76666666666) * 328278.76666666666
+			)
+		dataType: int64
+		formatString: #,0
+		lineageTag: d522ea9f-9868-4f39-b3a2-d749191c49ac
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "public us_demographics_data_2023"
+				          }
+				        },
+				        "Property": "total_population"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 328278.76666666666,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"p","Entity":"public us_demographics_data_2023"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}},"Size":328278.76666666666}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'public us_demographics_data_2023' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("127.0.0.1", "postgres"),
+				    public_us_demographics_data_2023 = Source{[Schema="public",Item="us_demographics_data_2023"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(public_us_demographics_data_2023,{{"state_fips_code", Int64.Type}, {"county_fips_code", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

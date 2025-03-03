@@ -1,0 +1,91 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "State Rankings",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "423263650de0dd81d73b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1d9f291647bdef624537\",\"layouts\":[{\"id\":0,\"position\":{\"x\":565,\"y\":147,\"width\":292,\"height\":260,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"public us_demographics_data_2023.Total Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Population\"},\"Name\":\"public us_demographics_data_2023.Total Population\",\"NativeReferenceName\":\"Total Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 260.00,
+          "width": 292.00,
+          "x": 565.00,
+          "y": 147.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"464a01c598662970fd7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29,\"y\":417,\"width\":526,\"height\":303,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(public us_demographics_data_2023.total_population)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0},\"Name\":\"Sum(public us_demographics_data_2023.total_population)\",\"NativeReferenceName\":\"total_population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 303.00,
+          "width": 526.00,
+          "x": 29.00,
+          "y": 417.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"58bcd1c5c00d25fdba4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":565.3535235096066,\"y\":31.560997671652792,\"z\":2,\"width\":292.2822827853063,\"height\":115.26625236603628,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"public us_demographics_data_2023.All US Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"All US Population\"},\"Name\":\"public us_demographics_data_2023.All US Population\",\"NativeReferenceName\":\"All US Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"All US Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 115.27,
+          "width": 292.28,
+          "x": 565.35,
+          "y": 31.56,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"776ad2d9a357a0adcbf0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.81656309150907,\"y\":31.560997671652792,\"z\":0,\"width\":525.5592220975226,\"height\":374.61532018961793,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(public us_demographics_data_2023.total_population)\"}],\"Group\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0},\"Name\":\"Sum(public us_demographics_data_2023.total_population)\",\"NativeReferenceName\":\"Sum of total_population\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Population by State'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 374.62,
+          "width": 525.56,
+          "x": 28.82,
+          "y": 31.56,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Race",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "7938c3abf53fe07f5a3e",
+      "ordinal": 2,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Gender",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "7b30f3d0c50e5cafd05e",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    }
+  ]
+}

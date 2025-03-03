@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "us_demographics_2023"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c2916668-e6e2-43f8-bfde-7e30d7d57794"
+  }
+}

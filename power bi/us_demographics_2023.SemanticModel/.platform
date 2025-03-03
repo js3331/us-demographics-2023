@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "us_demographics_2023"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0e1ccbd7-1a6e-4b83-b570-bdcff72d45b4"
+  }
+}
