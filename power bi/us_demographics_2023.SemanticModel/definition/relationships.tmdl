@@ -1,0 +1,4 @@
+relationship AutoDetected_64e64b05-2c3d-4e2d-97f7-978c1aa80e87
+	fromColumn: Race.fips
+	toColumn: 'US Demographics 2023'.fips
+

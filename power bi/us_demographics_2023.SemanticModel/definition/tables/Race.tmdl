@@ -1,0 +1,49 @@
+table Race
+	lineageTag: ba4a9597-7599-41be-9c51-c259c93b6673
+
+	column fips
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c9d6a28-1b6f-4210-a3e8-8b555bf6575c
+		summarizeBy: none
+		sourceColumn: fips
+
+		annotation SummarizationSetBy = Automatic
+
+	column race
+		dataType: string
+		lineageTag: 94015e68-4999-42e5-a115-a4d9e9029d76
+		summarizeBy: none
+		sourceColumn: race
+
+		annotation SummarizationSetBy = Automatic
+
+	column population
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f031439-dc11-42dc-91e4-5f418b1097d7
+		summarizeBy: sum
+		sourceColumn: population
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Race = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("127.0.0.1", "postgres"),
+				    public_us_demographics_data_2023 = Source{[Schema="public",Item="us_demographics_data_2023"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(public_us_demographics_data_2023,{"fips", "total_race_reponses", "white_alone", "black_or_african_american_alone", "hispanic_or_latino"}),
+				    #"Unpivoted Only Selected Columns" = Table.Unpivot(#"Removed Other Columns", {"white_alone", "black_or_african_american_alone", "hispanic_or_latino"}, "Attribute", "Value"),
+				    #"Replaced Value" = Table.ReplaceValue(#"Unpivoted Only Selected Columns","white_alone","White",Replacer.ReplaceText,{"Attribute"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","black_or_african_american_alone","Black",Replacer.ReplaceText,{"Attribute"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","hispanic_or_latino","Hispanics",Replacer.ReplaceText,{"Attribute"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Replaced Value2",{{"Value", "population"}, {"Attribute", "race"}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Renamed Columns",{"total_race_reponses"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -10,21 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 432,
-            "y": 3
-          },
-          "nodeIndex": "public us_demographics_data_2023",
-          "nodeLineageTag": "4b080615-d5b6-41d9-83f8-5f177dccf73d",
-          "size": {
-            "height": 450,
-            "width": 299
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 172,
-            "y": 118
+            "x": 0,
+            "y": 0
           },
           "nodeIndex": "Measure Table",
           "nodeLineageTag": "96f3eace-a1a2-4767-9a7f-f85a5afbb542",
@@ -33,6 +20,32 @@
             "width": 234
           },
           "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 248.72354948805463,
+            "y": 2.6544368600682606
+          },
+          "nodeIndex": "US Demographics 2023",
+          "nodeLineageTag": "4b080615-d5b6-41d9-83f8-5f177dccf73d",
+          "size": {
+            "height": 450,
+            "width": 299
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 637.66894197952217,
+            "y": 82.936006825938577
+          },
+          "nodeIndex": "Race",
+          "nodeLineageTag": "ba4a9597-7599-41be-9c51-c259c93b6673",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

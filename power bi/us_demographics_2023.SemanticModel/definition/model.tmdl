@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["public us_demographics_data_2023","Measure Table"]
+annotation PBI_QueryOrder = ["US Demographics 2023","Measure Table","Race"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -14,8 +14,9 @@ annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table 'public us_demographics_data_2023'
+ref table 'US Demographics 2023'
 ref table 'Measure Table'
+ref table Race
 
 ref cultureInfo en-US
 

@@ -1,12 +1,12 @@
 table 'Measure Table'
 	lineageTag: 96f3eace-a1a2-4767-9a7f-f85a5afbb542
 
-	measure 'Total Population' = SUM('public us_demographics_data_2023'[total_population])
+	measure 'Total Population' = SUM('US Demographics 2023'[total_population])
 		formatString: #,0
 		displayFolder: Population
 		lineageTag: 1fa9d484-1683-408a-aaab-a1c7f80a98d5
 
-	measure 'All US Population' = CALCULATE([Total Population], ALL('public us_demographics_data_2023'))
+	measure 'All US Population' = CALCULATE([Total Population], ALL('US Demographics 2023'))
 		formatString: 0
 		displayFolder: Population
 		lineageTag: 0f9e2be9-fdee-429b-8c8a-f9e7e9c49c09
@@ -16,22 +16,22 @@ table 'Measure Table'
 		displayFolder: Population
 		lineageTag: 7f02e54b-4f52-466c-8e63-fd281f918888
 
-	measure 'Total Female' = SUM('public us_demographics_data_2023'[female_population])
+	measure 'Total Female' = SUM('US Demographics 2023'[female_population])
 		formatString: #,0
 		displayFolder: Gender
 		lineageTag: 639a0b70-0ee1-4a75-a2d5-da28dc92e508
 
-	measure 'Total Male' = SUM('public us_demographics_data_2023'[male_population])
+	measure 'Total Male' = SUM('US Demographics 2023'[male_population])
 		formatString: #,0
 		displayFolder: Gender
 		lineageTag: 90c459a0-5e8e-481b-b2f4-cc9d1ea74bcb
 
-	measure 'All US Female' = CALCULATE([Total Female], ALL('public us_demographics_data_2023'))
+	measure 'All US Female' = CALCULATE([Total Female], ALL('US Demographics 2023'))
 		formatString: 0
 		displayFolder: Gender
 		lineageTag: 14022352-e10f-4b8b-8ce0-fc32b0a2626d
 
-	measure 'All US Male' = CALCULATE([Total Male], ALL('public us_demographics_data_2023'))
+	measure 'All US Male' = CALCULATE([Total Male], ALL('US Demographics 2023'))
 		formatString: 0
 		displayFolder: Gender
 		lineageTag: 9768f419-dfbf-40b3-8afb-d183cb98c156
@@ -46,41 +46,50 @@ table 'Measure Table'
 		displayFolder: Gender
 		lineageTag: 5d6bb01a-97aa-4584-82ae-8bbff7962d92
 
-	measure 'Total African American' = SUM('public us_demographics_data_2023'[black_or_african_american_alone])
+	measure 'Total Black' = CALCULATE([Total White Black Hispanics], Race[race] = "Black")
 		formatString: #,0
 		displayFolder: Race
 		lineageTag: 453c1c36-ebcf-4c88-ac88-0eb232bccd02
 
-	measure 'Total Hispanics or Latino' = SUM('public us_demographics_data_2023'[hispanic_or_latino])
+	measure 'Total Hispanics' = CALCULATE([Total White Black Hispanics], Race[race] = "Hispanics")
 		formatString: #,0
 		displayFolder: Race
 		lineageTag: 39b33a7a-2ff0-4e9d-b690-b520d329dc0b
 
-	measure 'Total White' = SUM('public us_demographics_data_2023'[white_alone])
+	measure 'Total White' = CALCULATE([Total White Black Hispanics], Race[race] = "White")
 		formatString: #,0
 		displayFolder: Race
 		lineageTag: 285450d5-11e8-4448-a7ff-1d60ca2dc8e2
 
-	measure 'Percentage of African America' = DIVIDE([Total African American], [Total Population])
+	measure 'Percentage of Black' = DIVIDE([Total Black], [Total Population])
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Race
 		lineageTag: ede11aa2-2faa-4d15-91fe-3d414034f85d
 
 	measure 'Percentage of White' = DIVIDE([Total White], [Total Population])
+		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Race
 		lineageTag: 28a41901-c717-4aa4-8cf1-9431f2a9c0f0
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Percentage of Hispanics or Latino' = DIVIDE([Total Hispanics or Latino], [Total Population])
+	measure 'Percentage of Hispanics' = DIVIDE([Total Hispanics], [Total Population])
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Race
 		lineageTag: 10458a49-5e69-4d43-9833-a820745c5a9c
 
-	measure 'Number of Counties' = DISTINCTCOUNT('public us_demographics_data_2023'[county_fips_code])
+	measure 'Number of Counties' = DISTINCTCOUNT('US Demographics 2023'[county_fips_code])
 		formatString: 0
 		displayFolder: Population
 		lineageTag: cf5dd0bd-407d-417d-94e3-c959ca80c856
+
+	measure 'Total White Black Hispanics' = SUM(Race[population])
+		formatString: #,0
+		displayFolder: Race
+		lineageTag: c6d410fb-0df0-4040-88b9-8236537eb3dd
+
+	measure 'Percentage Race' = DIVIDE([Total White Black Hispanics], [Total Population])
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Race
+		lineageTag: 152babd8-0879-4b99-88aa-4b8191421d2b
 
 	partition 'Measure Table' = m
 		mode: import
@@ -93,4 +102,6 @@ table 'Measure Table'
 				    #"Removed Columns"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

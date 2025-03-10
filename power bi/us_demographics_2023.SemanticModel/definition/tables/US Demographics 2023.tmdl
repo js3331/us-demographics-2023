@@ -1,4 +1,4 @@
-table 'public us_demographics_data_2023'
+table 'US Demographics 2023'
 	lineageTag: 4b080615-d5b6-41d9-83f8-5f177dccf73d
 
 	column county
@@ -21,7 +21,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: 0
 		lineageTag: ffbc6716-8b48-41b1-b112-32b55a6b1309
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: state_fips_code
 
 		annotation SummarizationSetBy = Automatic
@@ -30,7 +30,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: 0
 		lineageTag: c593663d-205b-4dac-8183-f5252c34f15d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: county_fips_code
 
 		annotation SummarizationSetBy = Automatic
@@ -39,7 +39,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: 0
 		lineageTag: 269f602c-6333-4bc0-ba2a-d941d7f273d2
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: fips
 
 		annotation SummarizationSetBy = Automatic
@@ -48,18 +48,18 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: 089d941d-d8cf-4654-b383-2b9949812692
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: total_population
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"public us_demographics_data_2023","TableItemName":"total_population (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"US Demographics 2023","TableItemName":"total_population (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
 
 	column male_population
 		dataType: int64
 		formatString: #,0
 		lineageTag: 126a0de4-fe1f-41a2-8e8e-887c3ca0ca02
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: male_population
 
 		annotation SummarizationSetBy = Automatic
@@ -68,7 +68,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: 92df901f-e374-4c6c-bcef-ceaf1aaee9dc
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: female_population
 
 		annotation SummarizationSetBy = Automatic
@@ -77,7 +77,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: a2e4da20-733e-40a2-8681-234554ff6780
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: total_race_reponses
 
 		annotation SummarizationSetBy = Automatic
@@ -86,7 +86,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: f66bb8b3-9921-49b6-82fc-a3c0ae94e83e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: white_alone
 
 		annotation SummarizationSetBy = Automatic
@@ -95,7 +95,7 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: d7fff87f-3b6b-4590-a2ac-0bab0a8923f5
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: black_or_african_american_alone
 
 		annotation SummarizationSetBy = Automatic
@@ -104,16 +104,16 @@ table 'public us_demographics_data_2023'
 		dataType: int64
 		formatString: #,0
 		lineageTag: f276fc65-2ebf-4e19-a18f-e4585c1d9414
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: hispanic_or_latino
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'total_population (bins)' =
 			IF(
-				ISBLANK('public us_demographics_data_2023'[total_population]),
+				ISBLANK('US Demographics 2023'[total_population]),
 				BLANK(),
-				INT('public us_demographics_data_2023'[total_population] / 328278.76666666666) * 328278.76666666666
+				INT('US Demographics 2023'[total_population] / 328278.76666666666) * 328278.76666666666
 			)
 		dataType: int64
 		formatString: #,0
@@ -128,7 +128,7 @@ table 'public us_demographics_data_2023'
 				      "Column": {
 				        "Expression": {
 				          "SourceRef": {
-				            "Entity": "public us_demographics_data_2023"
+				            "Entity": "US Demographics 2023"
 				          }
 				        },
 				        "Property": "total_population"
@@ -143,7 +143,7 @@ table 'public us_demographics_data_2023'
 				  }
 				}
 
-		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"p","Entity":"public us_demographics_data_2023"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}},"Size":328278.76666666666}}}}
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"p","Entity":"US Demographics 2023"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}},"Size":328278.76666666666}}}}
 
 		annotation SummarizationSetBy = Automatic
 
@@ -169,7 +169,7 @@ table 'public us_demographics_data_2023'
 			lineageTag: ee8a603d-618a-464a-82aa-3d0f33124d92
 			column: county
 
-	partition 'public us_demographics_data_2023' = m
+	partition 'US Demographics 2023' = m
 		mode: import
 		source =
 				let
