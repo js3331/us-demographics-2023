@@ -147,6 +147,28 @@ table 'public us_demographics_data_2023'
 
 		annotation SummarizationSetBy = Automatic
 
+	hierarchy 'state_fips_code Hierarchy'
+		lineageTag: 0c7cfca0-844e-4da2-b468-46186c794fe7
+
+		level state_fips_code
+			lineageTag: 7b5076e7-4586-4efb-8c79-4252c67e8eea
+			column: state_fips_code
+
+		level county_fips_code
+			lineageTag: 3125bdfa-51c4-4673-9d35-4cf9774ddf82
+			column: county_fips_code
+
+	hierarchy 'state Hierarchy'
+		lineageTag: 4fb3c6db-a1a8-4ef7-b1f3-05070e163745
+
+		level state
+			lineageTag: 67faf7e0-689f-4ad9-9919-cff2fd97ab78
+			column: state
+
+		level county
+			lineageTag: ee8a603d-618a-464a-82aa-3d0f33124d92
+			column: county
+
 	partition 'public us_demographics_data_2023' = m
 		mode: import
 		source =

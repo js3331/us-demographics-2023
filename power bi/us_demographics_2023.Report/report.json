@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -20,47 +20,131 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "State Rankings",
+      "displayName": "Gender",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "27243e3cd808369c00c2",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"46b87131063f5e354574\",\"layouts\":[{\"id\":0,\"position\":{\"x\":628.475435099416,\"y\":424.56402117288417,\"z\":3,\"width\":462.437226754217,\"height\":274.44345801437214,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Gender Ratio (F/M)\"},{\"queryRef\":\"Measure Table.Total Female\"},{\"queryRef\":\"Measure Table.Total Male\"}],\"Rows\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Gender Ratio (F/M)\"},\"Name\":\"Measure Table.Gender Ratio (F/M)\",\"NativeReferenceName\":\"Gender Ratio (F/M)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Female\"},\"Name\":\"Measure Table.Total Female\",\"NativeReferenceName\":\"Total Female\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Male\"},\"Name\":\"Measure Table.Total Male\",\"NativeReferenceName\":\"Total Male\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"public us_demographics_data_2023.state Hierarchy.state\"],\"isCollapsed\":true,\"isPinned\":true},{\"queryRefs\":[\"public us_demographics_data_2023.state Hierarchy.county\"],\"isCollapsed\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 274.44,
+          "width": 462.44,
+          "x": 628.48,
+          "y": 424.56,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"be706a4feb0549c9c175\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1090.9126618536334,\"y\":449.2639323941777,\"z\":1,\"width\":141.33838087740165,\"height\":112.52181778589257,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.All US Female\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Female\"},\"Name\":\"Measure Table.All US Female\",\"NativeReferenceName\":\"All US Female\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Female\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 112.52,
+          "width": 141.34,
+          "x": 1090.91,
+          "y": 449.26,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"c8cef51ed1e59061985c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1090.9126618536334,\"y\":561.7857501800703,\"z\":2,\"width\":141.33838087740165,\"height\":112.52181778589257,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.All Us Male\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Male\"},\"Name\":\"Measure Table.All Us Male\",\"NativeReferenceName\":\"All US Male\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Male\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 112.52,
+          "width": 141.34,
+          "x": 1090.91,
+          "y": 561.79,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"d651e961904fb73c95ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":694.3419487763615,\"y\":31.560997671652792,\"z\":0,\"width\":496.7426590060135,\"height\":327.95993232717467,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Measure Table.Gender Ratio (F/M)\"}],\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"X\":[{\"queryRef\":\"Measure Table.Total Population\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Gender Ratio (F/M)\"},\"Name\":\"Measure Table.Gender Ratio (F/M)\",\"NativeReferenceName\":\"Gender Ratio (F/M)\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 327.96,
+          "width": 496.74,
+          "x": 694.34,
+          "y": 31.56,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "State Population and Gender",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "423263650de0dd81d73b",
       "visualContainers": [
         {
-          "config": "{\"name\":\"1d9f291647bdef624537\",\"layouts\":[{\"id\":0,\"position\":{\"x\":565,\"y\":147,\"width\":292,\"height\":260,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"public us_demographics_data_2023.Total Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Population\"},\"Name\":\"public us_demographics_data_2023.Total Population\",\"NativeReferenceName\":\"Total Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"1d9f291647bdef624537\",\"layouts\":[{\"id\":0,\"position\":{\"x\":359.52092999882746,\"y\":514.5814837769477,\"z\":3000,\"width\":214.06589725121026,\"height\":102.91629675538954,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Total Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 260.00,
-          "width": 292.00,
-          "x": 565.00,
-          "y": 147.00,
-          "z": 3.00
+          "height": 102.92,
+          "width": 214.07,
+          "x": 359.52,
+          "y": 514.58,
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"464a01c598662970fd7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29,\"y\":417,\"width\":526,\"height\":303,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(public us_demographics_data_2023.total_population)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0},\"Name\":\"Sum(public us_demographics_data_2023.total_population)\",\"NativeReferenceName\":\"total_population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"42f900835d11293b0442\",\"layouts\":[{\"id\":0,\"position\":{\"x\":574.9590445401096,\"y\":98.79964488517396,\"z\":4001,\"width\":332.0765841973903,\"height\":260.7212851136535,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.total_population (bins)\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(public us_demographics_data_2023.county)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population (bins)\"},\"Name\":\"public us_demographics_data_2023.total_population (bins)\",\"NativeReferenceName\":\"total_population (bins)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"county\"}},\"Function\":5},\"Name\":\"CountNonNull(public us_demographics_data_2023.county)\",\"NativeReferenceName\":\"Count of county\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"county\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 303.00,
-          "width": 526.00,
-          "x": 29.00,
-          "y": 417.00,
-          "z": 1.00
+          "height": 260.72,
+          "width": 332.08,
+          "x": 574.96,
+          "y": 98.80,
+          "z": 4001.00
         },
         {
-          "config": "{\"name\":\"58bcd1c5c00d25fdba4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":565.3535235096066,\"y\":31.560997671652792,\"z\":2,\"width\":292.2822827853063,\"height\":115.26625236603628,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"public us_demographics_data_2023.All US Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"All US Population\"},\"Name\":\"public us_demographics_data_2023.All US Population\",\"NativeReferenceName\":\"All US Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"All US Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"464a01c598662970fd7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.81656309150907,\"y\":406.1763178612707,\"z\":1000,\"width\":330.7043669073184,\"height\":303.2600211058812,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"Values\":[{\"queryRef\":\"Measure Table.Total Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"public us_demographics_data_2023.state Hierarchy.state\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"public us_demographics_data_2023\"}},\"Property\":\"state\"}}],\"isPinned\":true},{\"queryRefs\":[\"public us_demographics_data_2023.state Hierarchy.county\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
-          "height": 115.27,
-          "width": 292.28,
-          "x": 565.35,
-          "y": 31.56,
-          "z": 2.00
+          "height": 303.26,
+          "width": 330.70,
+          "x": 28.82,
+          "y": 406.18,
+          "z": 1000.00
         },
         {
-          "config": "{\"name\":\"776ad2d9a357a0adcbf0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.81656309150907,\"y\":31.560997671652792,\"z\":0,\"width\":525.5592220975226,\"height\":374.61532018961793,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(public us_demographics_data_2023.total_population)\"}],\"Group\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0},\"Name\":\"Sum(public us_demographics_data_2023.total_population)\",\"NativeReferenceName\":\"Sum of total_population\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Population by State'\"}}}}}]}}}",
+          "config": "{\"name\":\"58bcd1c5c00d25fdba4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":359.52092999882746,\"y\":406.1763178612707,\"z\":2000,\"width\":214.06589725121026,\"height\":108.40516591567699,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.All US Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Population\"},\"Name\":\"Measure Table.All US Population\",\"NativeReferenceName\":\"All US Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"All US Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 108.41,
+          "width": 214.07,
+          "x": 359.52,
+          "y": 406.18,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"696018c8ae8329e4cf4c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":359.52092999882746,\"y\":610.6366940819779,\"z\":4000,\"width\":214.06589725121026,\"height\":109.77738320574885,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Percentage of All US Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of All US Population\"},\"Name\":\"Measure Table.Percentage of All US Population\",\"NativeReferenceName\":\"Percentage of All US Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of All US Population\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 109.78,
+          "width": 214.07,
+          "x": 359.52,
+          "y": 610.64,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"776ad2d9a357a0adcbf0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.81656309150907,\"y\":31.560997671652792,\"z\":0,\"width\":544.7702641585287,\"height\":374.61532018961793,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(public us_demographics_data_2023.total_population)\"}],\"Group\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"total_population\"}},\"Function\":0},\"Name\":\"Sum(public us_demographics_data_2023.total_population)\",\"NativeReferenceName\":\"Sum of total_population\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Population by State'\"}}}}}]}}}",
           "filters": "[]",
           "height": 374.62,
-          "width": 525.56,
+          "width": 544.77,
           "x": 28.82,
           "y": 31.56,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a3dd02def64d63cdb889\",\"layouts\":[{\"id\":0,\"position\":{\"x\":574.9590445401096,\"y\":359.52092999882746,\"z\":4002,\"width\":332.0765841973903,\"height\":274.44345801437214,\"tabOrder\":4002}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Measure Table.Total Population\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Number of Counties\"}],\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number of Counties\"},\"Name\":\"Measure Table.Number of Counties\",\"NativeReferenceName\":\"Number of Counties\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.44,
+          "width": 332.08,
+          "x": 574.96,
+          "y": 359.52,
+          "z": 4002.00
+        },
+        {
+          "config": "{\"name\":\"d95bf1df513bffc3ca0c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":917,\"y\":99,\"width\":332,\"height\":261,\"z\":4003,\"tabOrder\":4003}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"state\"},\"Name\":\"public us_demographics_data_2023.state\",\"NativeReferenceName\":\"state\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Measure Table\"}},\"Property\":\"Total Population\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FF0000'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapControls\":[{\"properties\":{\"autoZoom\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showZoomButtons\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"centerLatitude\":{\"expr\":{\"Literal\":{\"Value\":\"39.43266230909795D\"}}},\"centerLongitude\":{\"expr\":{\"Literal\":{\"Value\":\"-97.93131665086315D\"}}},\"zoomLevel\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"showLassoButton\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 261.00,
+          "width": 332.00,
+          "x": 917.00,
+          "y": 99.00,
+          "z": 4003.00
         }
       ],
       "width": 1280.00
@@ -72,19 +156,45 @@
       "filters": "[]",
       "height": 720.00,
       "name": "7938c3abf53fe07f5a3e",
-      "ordinal": 2,
-      "visualContainers": [],
-      "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Gender",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "7b30f3d0c50e5cafd05e",
       "ordinal": 1,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1a6cbc5d53efe8df8a00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":868.6135446154877,\"y\":26.07212851136535,\"z\":2,\"width\":411.66518702155815,\"height\":292.2822827853063,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"X\":[{\"queryRef\":\"Measure Table.Percentage of African America\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Percentage of Hispanics or Latino\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of African America\"},\"Name\":\"Measure Table.Percentage of African America\",\"NativeReferenceName\":\"Percentage of African America\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of Hispanics or Latino\"},\"Name\":\"Measure Table.Percentage of Hispanics or Latino\",\"NativeReferenceName\":\"Percentage of Hispanics or Latino\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 292.28,
+          "width": 411.67,
+          "x": 868.61,
+          "y": 26.07,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"26e006db540f91d90d7f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":23.32769393122163,\"y\":406.1763178612707,\"z\":3,\"width\":1000.3464044623863,\"height\":290.91006549523445,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"Values\":[{\"queryRef\":\"Measure Table.Total African American\"},{\"queryRef\":\"Measure Table.Percentage of African America\"},{\"queryRef\":\"Measure Table.Total Hispanics or Latino\"},{\"queryRef\":\"Measure Table.Percentage of Hispanics or Latino\"},{\"queryRef\":\"Measure Table.Total Population\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total African American\"},\"Name\":\"Measure Table.Total African American\",\"NativeReferenceName\":\"Total African American\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Hispanics or Latino\"},\"Name\":\"Measure Table.Total Hispanics or Latino\",\"NativeReferenceName\":\"Total Hispanics or Latino\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of African America\"},\"Name\":\"Measure Table.Percentage of African America\",\"NativeReferenceName\":\"Percentage of African America\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of Hispanics or Latino\"},\"Name\":\"Measure Table.Percentage of Hispanics or Latino\",\"NativeReferenceName\":\"Percentage of Hispanics or Latino\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of Hispanics or Latino\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 290.91,
+          "width": 1000.35,
+          "x": 23.33,
+          "y": 406.18,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"56617c979be5efe18d29\",\"layouts\":[{\"id\":0,\"position\":{\"x\":451.45948843364215,\"y\":26.07212851136535,\"z\":0,\"width\":428.1317945024205,\"height\":292.2822827853063,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"X\":[{\"queryRef\":\"Measure Table.Total Population\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Percentage of African America\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of African America\"},\"Name\":\"Measure Table.Percentage of African America\",\"NativeReferenceName\":\"Percentage of African America\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 292.28,
+          "width": 428.13,
+          "x": 451.46,
+          "y": 26.07,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e8a4a849ae5bd7508f4f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":23.32769393122163,\"y\":26.07212851136535,\"z\":1,\"width\":428.1317945024205,\"height\":292.2822827853063,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.state\",\"active\":true},{\"queryRef\":\"public us_demographics_data_2023.state Hierarchy.county\"}],\"X\":[{\"queryRef\":\"Measure Table.Total Population\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Percentage of Hispanics or Latino\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public us_demographics_data_2023\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"state\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.state\",\"NativeReferenceName\":\"state Hierarchy state\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Hierarchy\":\"state Hierarchy\"}},\"Level\":\"county\"},\"Name\":\"public us_demographics_data_2023.state Hierarchy.county\",\"NativeReferenceName\":\"state Hierarchy county\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Population\"},\"Name\":\"Measure Table.Total Population\",\"NativeReferenceName\":\"Total Population\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Percentage of Hispanics or Latino\"},\"Name\":\"Measure Table.Percentage of Hispanics or Latino\",\"NativeReferenceName\":\"Percentage of Hispanics or Latino\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 292.28,
+          "width": 428.13,
+          "x": 23.33,
+          "y": 26.07,
+          "z": 1.00
+        }
+      ],
       "width": 1280.00
     }
   ]

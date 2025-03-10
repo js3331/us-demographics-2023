@@ -10,20 +10,21 @@
       "nodes": [
         {
           "location": {
-            "x": 284,
-            "y": 0
+            "x": 432,
+            "y": 3
           },
           "nodeIndex": "public us_demographics_data_2023",
+          "nodeLineageTag": "4b080615-d5b6-41d9-83f8-5f177dccf73d",
           "size": {
-            "height": 300,
-            "width": 234
+            "height": 450,
+            "width": 299
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 284,
-            "y": 98
+            "x": 172,
+            "y": 118
           },
           "nodeIndex": "Measure Table",
           "nodeLineageTag": "96f3eace-a1a2-4767-9a7f-f85a5afbb542",
@@ -31,11 +32,11 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 97.666666666666671,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
