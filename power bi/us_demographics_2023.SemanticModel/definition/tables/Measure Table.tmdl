@@ -91,6 +91,22 @@ table 'Measure Table'
 		displayFolder: Race
 		lineageTag: 152babd8-0879-4b99-88aa-4b8191421d2b
 
+	measure 'Total State Population' =
+			
+			VAR StateFIPS = SELECTEDVALUE('US Demographics 2023'[state_fips_code])
+			RETURN
+			    CALCULATE([Total Population], FILTER(ALL('US Demographics 2023'), 'US Demographics 2023'[state_fips_code] = StateFIPS))
+		formatString: 0
+		displayFolder: Population
+		lineageTag: a66b0ee1-5302-41b9-8179-b19f6f9d1f52
+
+	measure 'Percentage of County Population by State Population' =
+			
+			DIVIDE([Total Population], [Total State Population])
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Population
+		lineageTag: 9ad90f17-c141-4b69-9244-e7a32fb36aa7
+
 	partition 'Measure Table' = m
 		mode: import
 		source =
