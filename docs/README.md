@@ -2,6 +2,19 @@
 
 Simple [Power BI visualizations of 2023 US Census](#power-bi-dashboard) data organized by [Ahmed Mohamed on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/county-level-demographic-population-race-gender/data).
 
+
+## Setup
+
+As a practice, deployed local instance of PostgreSQL database on Postgres Official Docker container. Created a table, inserted the dataset, and connected pgAdmin4 for simple SQL EDA. Then, connected Power BI Desktop and built the dashboard. 
+
+
+## PostgreSQL EDA
+
+[Simple Exploratory Data Analysis done in SQL](https://github.com/js3331/us-demographics-2023/blob/main/eda_us_demographics_2023.sql) as a basic sanity check step.
+
+Observed that there are 50 states, District of Columbia, and Puerto Rico in the dataset, validated the number of US counties (and county equivalent) with external sources, and observed that there are duplicates of county names, which is reasonable.
+
+
 ## Power BI Dashboard
 
 ### States Page
@@ -33,6 +46,7 @@ Simple [Power BI visualizations of 2023 US Census](#power-bi-dashboard) data org
 - The cards show Percentage of Black and Hispanics in each state.
 - The pie chart shows porportion of white, black, and others in relationship to each other and to total population.
 
+
 ### Gender Page
 
 ![](gender_page_screenshot.png)
@@ -41,11 +55,8 @@ Simple [Power BI visualizations of 2023 US Census](#power-bi-dashboard) data org
 - The scatter plots show Gender Ratio (female population divided by male population) in relation to different measures.
     - Noticeable positive relationship between Gender Ratio and Percentage of Black population in states.
     - No such relationship between Gender Ratio and Percentage of Hispanics population in states when you remove Puerto Rico.
-- The line and column chart of 15 states with lowest Gender Ratio (meaning low female to male ratio) shows lower than average proportion of Black population but doesn't show such clear pattern with Hispanics population. 
+- The line and column chart of 15 states with lowest Gender Ratio (meaning low female to male ratio) shows lower than average proportion of Black population but doesn't show such clear pattern with Hispanics population.
 
-## Setup
-
-As a practice, deployed local instance of PostgreSQL database on Postgres Official Docker container. Created a table, inserted the dataset, and connected pgAdmin4 for simple SQL EDA. Then, connected Power BI Desktop and built the dashboard. 
 
 ## Dataset Features
 
@@ -65,10 +76,3 @@ The dataset includes the following columns:
     White Alone: Number of individuals identifying as White alone.
     Black or African American Alone: Number of individuals identifying as Black or African American alone.
     Hispanic or Latino: Number of individuals identifying as Hispanic or Latino.
-
-
-## PostgreSQL EDA
-
-[Simple Exploratory Data Analysis done in SQL](https://github.com/js3331/us-demographics-2023/blob/main/eda_us_demographics_2023.sql) as a basic sanity check step.
-
-Observed that there are 50 states, District of Columbia, and Puerto Rico in the dataset, validated the number of US counties (and county equivalent) with external sources, and observed that there are duplicates of county names, which is reasonable.
