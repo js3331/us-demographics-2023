@@ -1,4 +1,4 @@
-# US Demographics 2023
+# [US Demographics 2023](https://github.com/js3331/us-demographics-2023)
 
 Simple [Power BI visualizations of 2023 US Census](#power-bi-dashboard) data organized by [Ahmed Mohamed on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/county-level-demographic-population-race-gender/data).
 
