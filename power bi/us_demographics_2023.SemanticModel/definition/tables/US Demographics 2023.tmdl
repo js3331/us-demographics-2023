@@ -53,8 +53,6 @@ table 'US Demographics 2023'
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"US Demographics 2023","TableItemName":"total_population (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
-
 	column male_population
 		dataType: int64
 		formatString: #,0
@@ -106,44 +104,6 @@ table 'US Demographics 2023'
 		lineageTag: f276fc65-2ebf-4e19-a18f-e4585c1d9414
 		summarizeBy: none
 		sourceColumn: hispanic_or_latino
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'total_population (bins)' =
-			IF(
-				ISBLANK('US Demographics 2023'[total_population]),
-				BLANK(),
-				INT('US Demographics 2023'[total_population] / 328278.76666666666) * 328278.76666666666
-			)
-		dataType: int64
-		formatString: #,0
-		lineageTag: d522ea9f-9868-4f39-b3a2-d749191c49ac
-		summarizeBy: none
-
-		extendedProperty GroupingMetadata =
-				{
-				  "version": 0,
-				  "groupedColumns": [
-				    {
-				      "Column": {
-				        "Expression": {
-				          "SourceRef": {
-				            "Entity": "US Demographics 2023"
-				          }
-				        },
-				        "Property": "total_population"
-				      }
-				    }
-				  ],
-				  "binningMetadata": {
-				    "binSize": {
-				      "value": 328278.76666666666,
-				      "unit": 0
-				    }
-				  }
-				}
-
-		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"p","Entity":"US Demographics 2023"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"p"}},"Property":"total_population"}},"Size":328278.76666666666}}}}
 
 		annotation SummarizationSetBy = Automatic
 

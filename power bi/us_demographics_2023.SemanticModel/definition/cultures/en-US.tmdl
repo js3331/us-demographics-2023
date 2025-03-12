@@ -2,8 +2,5395 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "US_demographics_2023": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "US demographics 2023": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "demographics 2023": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.county": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "county"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "county": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "shire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "canton": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "state"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "": {}
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_fips_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "state_fips_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state fips code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state fip code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "state_fips_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "state fip id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "state fip key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "location fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "province fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "territory fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "nation fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "condition fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "country fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.county_fips_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "county_fips_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "county fips code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "county fip code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "county_fips_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "county fip id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "county fip key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.fip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "fips"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fip": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.total_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "total_population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_population": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.male_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "male_population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "male population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "male_population": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "male populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "male person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.female_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "female_population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "female population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "female_population": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "female populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "female person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.total_race_reponses": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "total_race_reponses"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total race reponses": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_race_reponses": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "reponses": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "race reponses": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate race reponses": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall race reponses": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.white_alone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "white_alone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "white alone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white_alone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.black_or_african_american_alone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "black_or_african_american_alone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "black or african american alone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black_or_african_american_alone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "black african american alone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "african american alone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.hispanic_or_latino": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "ConceptualProperty": "hispanic_or_latino"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hispanic or latino": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hispanic_or_latino": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "hispanic": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hispanic latino": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latino": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_fips_code_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state_fips_code Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state_fips_code hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state_fips_code ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state_fips_code grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state_fips_code order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state_fips_code pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_fips_code_hierarchy.state_fips_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state_fips_code Hierarchy",
+			          "HierarchyLevel": "state_fips_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state fips code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state fip code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "state_fips_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "state fip id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "state fip key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "location fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "province fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "territory fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "nation fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "condition fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "country fip code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_fips_code_hierarchy.county_fips_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state_fips_code Hierarchy",
+			          "HierarchyLevel": "county_fips_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "county fips code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "county fip code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "county_fips_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "county fip id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "county fip key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "province hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "territory hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "nation hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "condition hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "country hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "state ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "state pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_hierarchy.state": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state Hierarchy",
+			          "HierarchyLevel": "state"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "": {}
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "US_demographics_2023.state_hierarchy.county": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "US Demographics 2023",
+			          "Hierarchy": "state Hierarchy",
+			          "HierarchyLevel": "county"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "county": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "shire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "canton": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measure table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure table top": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure spreadsheet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.all_US_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "All US Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "all US population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "US population": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "all us populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "all us person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "us populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "us person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_of_all_US_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage of All US Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage of all US population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ratio of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "measurement of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "calculation of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "fraction of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "proportion of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "part of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "section of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "entitlement of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "take of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "profit of all us population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "% of US Pop": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_female": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Female"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total female": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "female": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate female": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall female": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total lady": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total woman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "lady": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "woman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_male": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Male"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total male": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "male": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate male": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall male": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "masculine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "macho": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "total bloke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total boy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total fella": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total gentleman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "bloke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "boy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.all_US_female": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "All US Female"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "all US female": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "female": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "US female": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "all us lady": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "all us woman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "us lady": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "us woman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "lady": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "woman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.all_US_male": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "All US Male"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "all US male": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "male": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "US male": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "all us bloke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "all us boy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "all us fella": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "all us gentleman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "masculine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "macho": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "us bloke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "us boy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "us fella": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "us gentleman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.all_US_gender_ratio_f_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "All US Gender Ratio (F/M)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "all US gender ratio (f/m)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "all US gender ratio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "all US gender ratio (f": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "all US gender ratio ( f m )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "m)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.gender_ratio_f_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Gender Ratio (F/M)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender ratio (f/m)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gender ratio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "gender ratio (f": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "gender ratio ( f m )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "m)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sexuality ratio (f": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "sex ratio (f": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total black": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_hispanics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Hispanics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total hispanics": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hispanics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total White"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "silver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gray": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "greying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "graying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "freezing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage Black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage black": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage White"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "silver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gray": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "greying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "graying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "freezing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_hispanics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage Hispanics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage hispanics": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hispanics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.number_of_counties": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Number of Counties"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "number of counties": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quantity of county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.769
+			          }
+			        },
+			        {
+			          "amount of county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.746
+			          }
+			        },
+			        {
+			          "count of county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.746
+			          }
+			        },
+			        {
+			          "number of county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.746
+			          }
+			        },
+			        {
+			          "no of county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_white_black_hispanics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total White Black Hispanics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total white black hispanics": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hispanics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "black hispanics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "white black hispanics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate white black hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall white black hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_race": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage Race"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage race": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "percentage rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "percentage pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "percentage contest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage battle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage duel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage fight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage sprint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage meeting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "percentage marathon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_state_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total State Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total state population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state population": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total location population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "total province population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "total territory population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "total nation population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "location population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "province population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "territory population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "nation population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "aggregate state population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall state population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.percentage_of_county_population_by_state_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Percentage of County Population by State Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentage of county population by state population": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_non_hispanics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Non Hispanics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total non hispanics": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate non hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall non hispanic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "measure_table.total_other_race": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measure Table",
+			          "ConceptualProperty": "Total Other Race"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total other race": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "other race": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate other race": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall other race": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "total other competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total other rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total other pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "other competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "other rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "other pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total other contest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total other battle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "race": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Race"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "race": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "battle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "duel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sprint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "meeting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marathon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "race.fip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Race",
+			          "ConceptualProperty": "fips"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "fip": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "race.race": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Race",
+			          "ConceptualProperty": "race"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "race": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "battle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "duel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sprint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "meeting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marathon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "race.population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Race",
+			          "ConceptualProperty": "population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "race_is_large": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "race.population": {
+			          "Target": {
+			            "Entity": "race.population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Adjectives": [
+			              {
+			                "large": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "big": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "populated": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "small": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "race.population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "population_indicates_how_large_races_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "race.population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_populations"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_county": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.county": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.county"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.county"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.county"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_counties"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_state": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.state"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_states"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_state_clusters": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_clusters": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_clusters"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.state_clusters"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_clusters"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_state_clusters"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_state_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.state_hierarchy"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_state_hierarchies"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_state_hierarchy_state": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy.state": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.state"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.state_hierarchy.state"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_states1"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_in_state_hierarchy_county": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy.county": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.county"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "US_demographics_2023.state_hierarchy.county"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.county"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_are_in_counties1"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_county": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.county": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.county"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.county"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_counties"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_state": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_states"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_state_fips_code": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_state_fips_codes"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_county_fips_code": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.county_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.county_fips_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.county_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_county_fips_codes"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_fip": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.fip": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.fip"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.fip"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_fips"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_total_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.total_population": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.total_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.total_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_populations"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_male_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.male_population": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.male_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.male_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_male_populations"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_female_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.female_population": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.female_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.female_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_female_populations"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_total_race_reponses": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.total_race_reponses": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.total_race_reponses"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.total_race_reponses"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_race_reponses"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_white_alone": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.white_alone": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.white_alone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.white_alone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_white_alone"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_black_or_african_american_alone": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.black_or_african_american_alone": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.black_or_african_american_alone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.black_or_african_american_alone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_black_or_african_american_alone"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_hispanic_or_latino": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.hispanic_or_latino": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.hispanic_or_latino"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.hispanic_or_latino"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_hispanic_or_latino"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_total_population_bins": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.total_population_bins": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.total_population_bins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.total_population_bins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_population_bins"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_state_clusters": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_clusters": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_clusters"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_clusters"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_state_clusters"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_state_fips_code_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_fips_code_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_state_fips_code_hierarchies"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_state_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_state_hierarchies"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_population": {
+			          "Target": {
+			            "Entity": "measure_table.total_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_population"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_all_US_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.all_US_population": {
+			          "Target": {
+			            "Entity": "measure_table.all_US_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.all_US_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_all_US_population"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_of_all_US_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_of_all_US_population": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_of_all_US_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_of_all_US_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_of_all_US_population"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_female": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_female": {
+			          "Target": {
+			            "Entity": "measure_table.total_female"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_female"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_female"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_male": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_male": {
+			          "Target": {
+			            "Entity": "measure_table.total_male"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_male"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_male"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_all_US_female": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.all_US_female": {
+			          "Target": {
+			            "Entity": "measure_table.all_US_female"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.all_US_female"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_all_US_female"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_all_US_male": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.all_US_male": {
+			          "Target": {
+			            "Entity": "measure_table.all_US_male"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.all_US_male"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_all_US_male"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_all_US_gender_ratio_f_m": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.all_US_gender_ratio_f_m": {
+			          "Target": {
+			            "Entity": "measure_table.all_US_gender_ratio_f_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.all_US_gender_ratio_f_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_all_US_gender_ratio_f_m"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_gender_ratio_f_m": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.gender_ratio_f_m": {
+			          "Target": {
+			            "Entity": "measure_table.gender_ratio_f_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.gender_ratio_f_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_gender_ratio_f_m"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_black": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_black": {
+			          "Target": {
+			            "Entity": "measure_table.total_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_black"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.total_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_hispanics"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_white": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_white": {
+			          "Target": {
+			            "Entity": "measure_table.total_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_white"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_percentage_black": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.percentage_black": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_percentage_black"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_black": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_black": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_black"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_percentage_white": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.percentage_white": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_percentage_white"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_white": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_white": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_white"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_percentage_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.percentage_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_percentage_hispanics"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_hispanics"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_number_of_counties": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.number_of_counties": {
+			          "Target": {
+			            "Entity": "measure_table.number_of_counties"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.number_of_counties"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_number_of_counties"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_white_black_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_white_black_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.total_white_black_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_white_black_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_white_black_hispanics"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_percentage_race": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.percentage_race": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_percentage_race"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_race": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_race": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_race"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_state_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_state_population": {
+			          "Target": {
+			            "Entity": "measure_table.total_state_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_state_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_state_population"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_percentage_of_county_population_by_state_population": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.percentage_of_county_population_by_state_population": {
+			          "Target": {
+			            "Entity": "measure_table.percentage_of_county_population_by_state_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.percentage_of_county_population_by_state_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_percentage_of_county_population_by_state_population"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_non_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_non_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.total_non_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_non_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_non_hispanics"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_non_hispanics": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_non_hispanics": {
+			          "Target": {
+			            "Entity": "measure_table.total_non_hispanics"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_non_hispanics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_non_hispanics"
+			        }
+			      ]
+			    },
+			    "race_has_measure_table_total_other_race": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "measure_table.total_other_race": {
+			          "Target": {
+			            "Entity": "measure_table.total_other_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_other_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_total_other_race"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_has_measure_table_total_other_race": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        },
+			        "measure_table.total_other_race": {
+			          "Target": {
+			            "Entity": "measure_table.total_other_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "measure_table.total_other_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_total_other_race"
+			        }
+			      ]
+			    },
+			    "race_has_race": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "race.race": {
+			          "Target": {
+			            "Entity": "race.race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "race.race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_races"
+			        }
+			      ]
+			    },
+			    "race_has_US_demographics_2023": {
+			      "Binding": {
+			        "ConceptualEntity": "Race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "race": {
+			          "Target": {
+			            "Entity": "race"
+			          }
+			        },
+			        "US_demographics_2023": {
+			          "Target": {
+			            "Entity": "US_demographics_2023"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "race"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "races_have_US_demographics_2023"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023"
+			            },
+			            "Object": {
+			              "Role": "race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "US_demographics_2023_have_races"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_fips_code_hierarchy_has_state_fips_code": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_fips_code_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy"
+			          }
+			        },
+			        "US_demographics_2023.state_fips_code_hierarchy.state_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_fips_code_hierarchies_have_state_fips_codes"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_fips_code_hierarchy_has_county_fips_code": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_fips_code_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy"
+			          }
+			        },
+			        "US_demographics_2023.state_fips_code_hierarchy.county_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_fips_code_hierarchies_have_county_fips_codes"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_fips_code_hierarchy_state_fips_code_has_US_demographics_2023_state_fips_code_hierarchy_county_fips_code": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_fips_code_hierarchy.state_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			          }
+			        },
+			        "US_demographics_2023.state_fips_code_hierarchy.county_fips_code": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_fips_codes_have_county_fips_codes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "county_fips_codes_have_state_fips_codes"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.county_fips_code"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_fips_code_hierarchy.state_fips_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "county_fips_codes_are_in_state_fips_codes"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_hierarchy_has_state": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy.state": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.state"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_hierarchies_have_states"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_hierarchy_has_county": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_hierarchy": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy.county": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.county"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.county"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "state_hierarchies_have_counties"
+			        }
+			      ]
+			    },
+			    "US_demographics_2023_state_hierarchy_state_has_US_demographics_2023_state_hierarchy_county": {
+			      "Binding": {
+			        "ConceptualEntity": "US Demographics 2023"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "US_demographics_2023.state_hierarchy.state": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.state"
+			          }
+			        },
+			        "US_demographics_2023.state_hierarchy.county": {
+			          "Target": {
+			            "Entity": "US_demographics_2023.state_hierarchy.county"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_hierarchy.state"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.county"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "states_have_counties"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_hierarchy.county"
+			            },
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "counties_have_states"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "US_demographics_2023.state_hierarchy.county"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "US_demographics_2023.state_hierarchy.state"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "counties_are_in_states"
+			        }
+			      ]
+			    }
+			  }
 			}
 		contentType: json
 

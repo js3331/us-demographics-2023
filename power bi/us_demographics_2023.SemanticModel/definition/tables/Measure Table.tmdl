@@ -7,12 +7,12 @@ table 'Measure Table'
 		lineageTag: 1fa9d484-1683-408a-aaab-a1c7f80a98d5
 
 	measure 'All US Population' = CALCULATE([Total Population], ALL('US Demographics 2023'))
-		formatString: 0
+		formatString: #,0
 		displayFolder: Population
 		lineageTag: 0f9e2be9-fdee-429b-8c8a-f9e7e9c49c09
 
 	measure 'Percentage of All US Population' = DIVIDE([Total Population], [All US Population])
-		formatString: 0.00%;-0.00%;0.00%
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Population
 		lineageTag: 7f02e54b-4f52-466c-8e63-fd281f918888
 
@@ -61,18 +61,18 @@ table 'Measure Table'
 		displayFolder: Race
 		lineageTag: 285450d5-11e8-4448-a7ff-1d60ca2dc8e2
 
-	measure 'Percentage of Black' = DIVIDE([Total Black], [Total Population])
-		formatString: 0.00%;-0.00%;0.00%
+	measure 'Percentage Black' = DIVIDE([Total Black], [Total Population])
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Race
 		lineageTag: ede11aa2-2faa-4d15-91fe-3d414034f85d
 
-	measure 'Percentage of White' = DIVIDE([Total White], [Total Population])
+	measure 'Percentage White' = DIVIDE([Total White], [Total Population])
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Race
 		lineageTag: 28a41901-c717-4aa4-8cf1-9431f2a9c0f0
 
-	measure 'Percentage of Hispanics' = DIVIDE([Total Hispanics], [Total Population])
-		formatString: 0.00%;-0.00%;0.00%
+	measure 'Percentage Hispanics' = DIVIDE([Total Hispanics], [Total Population])
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: Race
 		lineageTag: 10458a49-5e69-4d43-9833-a820745c5a9c
 
@@ -96,7 +96,7 @@ table 'Measure Table'
 			VAR StateFIPS = SELECTEDVALUE('US Demographics 2023'[state_fips_code])
 			RETURN
 			    CALCULATE([Total Population], FILTER(ALL('US Demographics 2023'), 'US Demographics 2023'[state_fips_code] = StateFIPS))
-		formatString: 0
+		formatString: #,0
 		displayFolder: Population
 		lineageTag: a66b0ee1-5302-41b9-8179-b19f6f9d1f52
 
@@ -106,6 +106,26 @@ table 'Measure Table'
 		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Population
 		lineageTag: 9ad90f17-c141-4b69-9244-e7a32fb36aa7
+
+	measure 'Total Non Hispanics' = [Total Population] - [Total Hispanics]
+		formatString: 0
+		displayFolder: Race
+		lineageTag: f792f5b5-dc3a-48c3-8fe2-bfa6a81eec93
+
+	measure 'Total Other Race' = [Total Population] - [Total White] - [Total Black]
+		formatString: #,0
+		displayFolder: Race
+		lineageTag: 32695a95-4e09-4508-957f-23c0b1900aaf
+
+	measure '% Black in All US' = CALCULATE([Percentage Black], ALL('US Demographics 2023'))
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Race
+		lineageTag: f32a4616-afb8-427f-b1be-fa670317a75c
+
+	measure '% Hispanics in US' = CALCULATE([Percentage Hispanics], ALL('US Demographics 2023'))
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Race
+		lineageTag: 14290892-37ef-4812-9b7b-9b9ccb9762bc
 
 	partition 'Measure Table' = m
 		mode: import
