@@ -34,9 +34,21 @@ Observed that there are 50 states, District of Columbia, and Puerto Rico in the 
 
 ## Power BI Dashboard
 
+### States
+
 ![](states_page_screenshot.png)
 
+- Treemap and bar chart for showing proportions of state populations.
+- Scatter plot of Population vs # of Counties of each state to show that the relationship is not as linear as one would expect. It shows states like Texas, Virginia, and Georgia have relatively high number of counties given their populations, but states like California has very few counties despite being the most populous state.
+- Line and column chart of # of Counties vs Population of 15 least populated states shows again that the relationship between # of Counties and Population is not strong.
+
+![](states_page_screenshot_interact.png)
+
+### Race
+
 ![](race_page_screenshot.png)
+
+### Gender
 
 ![](gender_page_screenshot.png)
 
