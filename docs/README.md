@@ -34,26 +34,43 @@ Observed that there are 50 states, District of Columbia, and Puerto Rico in the 
 
 ## Power BI Dashboard
 
-### States
+### States Page
 
 ![](states_page_screenshot.png)
-<p align="center">States page</p>
+<p align="center">Figure 1. States page</p>
 
-- Treemap and bar chart for showing proportions of state populations.
-- Scatter plot of Population vs # of Counties of each state to show that the relationship is not as linear as one would expect. It shows states like Texas, Virginia, and Georgia have relatively high number of counties given their populations, but states like California has very few counties despite being the most populous state.
-- Line and column chart of # of Counties vs Population of 15 least populated states shows again that the relationship between # of Counties and Population is not strong.
+- The treemap and the bar chart for showing proportions of state populations.
+- The scatter plot of Population vs # of Counties of each state to show that the relationship is not as linear as one would expect. It shows states like Texas, Virginia, and Georgia have relatively high number of counties given their populations, but states like California has very few counties despite being the most populous state.
+- The line and column chart of # of Counties vs Population of 15 least populated states shows again that the relationship between # of Counties and Population is not strong.
 
 ![](states_page_screenshot_interact.png)
-<p align="center">Interactive section of States page</p>
+<p align="center">Figure 2. Interactive section of States page</p>
 
-- Above shows a multirow card with population, population percentage, and # of counties that shows data of filtered state. 
+- The multirow card shows population, population percentage, and # of counties of filtered state. 
 
-### Race
+
+### Race Page
 
 ![](race_page_screenshot.png)
+<p align="center">Figure 3. Race page</p>
 
-### Gender
+- The stacked bar charts shows proportion of white/black/neither and hispanics/non-hispanics population in each state.
+- The scatter plot of population vs race percentage shows slight positive relation.
+
+![](race_page_screenshot_interact.png)
+<p align="center">Figure 4. Interactice section of Race page</p>
+
+- The cards show Percentage of Black and Hispanics in each state.
+- The pie chart shows porportion of white, black, and others in relationship to each other and to total population.
+
+### Gender Page
 
 ![](gender_page_screenshot.png)
+<p align="center">Figure 4. Gender page</p>
+
+- The scatter plots show Gender Ratio (female population divided by male population) in relation to different measures.
+    - Noticeable positive relationship between Gender Ratio and Percentage of Black population in states.
+    - No such relationship between Gender Ratio and Percentage of Hispanics population in states when you remove Puerto Rico.
+- The line and column chart of 15 states with lowest Gender Ratio (meaning low female to male ratio) shows lower than average proportion of Black population but doesn't show such clear pattern with Hispanics population. 
 
 
