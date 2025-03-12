@@ -37,12 +37,16 @@ Observed that there are 50 states, District of Columbia, and Puerto Rico in the 
 ### States
 
 ![](states_page_screenshot.png)
+<p align="center">States page</p>
 
 - Treemap and bar chart for showing proportions of state populations.
 - Scatter plot of Population vs # of Counties of each state to show that the relationship is not as linear as one would expect. It shows states like Texas, Virginia, and Georgia have relatively high number of counties given their populations, but states like California has very few counties despite being the most populous state.
 - Line and column chart of # of Counties vs Population of 15 least populated states shows again that the relationship between # of Counties and Population is not strong.
 
 ![](states_page_screenshot_interact.png)
+<p align="center">Interactive section of States page</p>
+
+- Above shows a multirow card with population, population percentage, and # of counties that shows data of filtered state. 
 
 ### Race
 
