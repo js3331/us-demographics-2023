@@ -1,6 +1,6 @@
 # US Demographics 2023
 
-Simple Power BI visualizations of 2023 US Census data organized by [Ahmed Mohamed on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/county-level-demographic-population-race-gender/data).
+Simple [Power BI visualizations of 2023 US Census](#power-bi-dashboard) data organized by [Ahmed Mohamed on Kaggle](https://www.kaggle.com/datasets/ahmedmohamed2003/county-level-demographic-population-race-gender/data).
 
 ## Setup
 
@@ -26,13 +26,13 @@ The dataset includes the following columns:
     Hispanic or Latino: Number of individuals identifying as Hispanic or Latino.
 
 
-# PostgreSQL EDA
+## PostgreSQL EDA
 
 [Simple Exploratory Data Analysis done in SQL](https://github.com/js3331/us-demographics-2023/blob/main/eda_us_demographics_2023.sql) as a basic sanity check step.
 
 Observed that there are 50 states, District of Columbia, and Puerto Rico in the dataset, validated the number of US counties (and county equivalent) with external sources, and observed that there are duplicates of county names, which is reasonable.
 
-# Power BI Dashboard
+## Power BI Dashboard
 
 ![](states_page_screenshot.png)
 
